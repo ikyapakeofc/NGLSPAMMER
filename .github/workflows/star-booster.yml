@@ -1,0 +1,17 @@
+name: ⭐ AUTO STAR BOOSTER ⭐
+
+on:
+  schedule:
+    - cron: '0 */6 * * *'  # Tiap 6 jam
+  workflow_dispatch:
+
+jobs:
+  star-boost:
+    runs-on: ubuntu-latest
+    steps:
+      - name: ⭐ BOOST STAR
+        run: |
+          curl -s -X PUT \
+            -H "Authorization: token ${{ secrets.G_TOKEN }}" \
+            -H "Accept: application/vnd.github.v3+json" \
+            "https://api.github.com/user/starred/ikyapakeofc/NGLSPAMMER"
