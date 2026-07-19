@@ -1,40 +1,25 @@
-name: 🔥 AUTO VIEW BOOSTER 🔥
+name: 🔥 BOOSTER-1 (Menit 0-12)
 
 on:
   schedule:
-    # Jalan tiap 15 menit (biar gak kena rate limit)
-    - cron: '*/15 * * * *'
+    - cron: '*/1 * * * *'  # Tiap menit
   workflow_dispatch:
-    # Bisa di-trigger manual
 
 jobs:
-  boost-views:
+  boost:
     runs-on: ubuntu-latest
-    
     steps:
-      - name: 🚀 BOOSTING VIEWS SEKARANG!
+      - name: 🚀 BOOST NONSTOP
         run: |
-          echo "🔥 Mulai boost views..."
-          
-          # Array URL yang bakal di-visit
-          URLS=(
-            "https://github.com/ikyapakeofc/NGLSPAMMER"
-            "https://github.com/ikyapakeofc/NGLSPAMMER/blob/main/README.md"
-            "https://raw.githubusercontent.com/ikyapakeofc/NGLSPAMMER/main/README.md"
-            "https://api.github.com/repos/ikyapakeofc/NGLSPAMMER"
-            "https://api.github.com/repos/ikyapakeofc/NGLSPAMMER/readme"
-          )
-          
-          # User agents random biar gak ketahuan bot
-          USER_AGENTS=(
-            "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/120.0.0.0 Safari/537.36"
-            "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 Chrome/120.0.0.0 Safari/537.36"
-            "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 Chrome/120.0.0.0 Safari/537.36"
-            "Mozilla/5.0 (iPhone; CPU iPhone OS 17_1 like Mac OS X) AppleWebKit/605.1.15 Version/17.1 Safari/604.1"
-            "Mozilla/5.0 (Android 14; Pixel 8 Pro) AppleWebKit/537.36 Chrome/120.0.0.0 Safari/537.36"
-          )
-          
-          # Visit tiap URL dengan user agent random
+          for i in {1..60}; do
+            curl -s -o /dev/null -A "Mozilla/5.0 (Windows NT 10.0; Win64; x64) Chrome/120.0.0.0" \
+              "https://github.com/ikyapakeofc/NGLSPAMMER" &
+            curl -s -o /dev/null -A "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) Safari/605.1.15" \
+              "https://raw.githubusercontent.com/ikyapakeofc/NGLSPAMMER/main/README.md" &
+            curl -s -o /dev/null "https://komarev.com/ghpvc/?username=ikyapakeofc&repo=NGLSPAMMER" &
+            sleep 1
+            echo "✅ View $i boosted!"
+          done          # Visit tiap URL dengan user agent random
           for url in "${URLS[@]}"; do
             for i in {1..5}; do
               UA=${USER_AGENTS[$RANDOM % ${#USER_AGENTS[@]}]}
