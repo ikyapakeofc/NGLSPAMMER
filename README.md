@@ -226,6 +226,14 @@ Iky Apake
 <p align="center">
   <img src="https://komarev.com/ghpvc/?username=iky-apake&repo=ngl-spammer&label=Views&color=red&style=for-the-badge" alt="Views">
 </p>
+
+<p align="center">
+  <img src="https://komarev.com/ghpvc/?username=ikyapakeofc&repo=NGLSPAMMER&label=👁️+TOTAL+VIEWS&color=ff0000&style=for-the-badge" alt="Views">
+  <img src="https://komarev.com/ghpvc/?username=ikyapakeofc&repo=NGLSPAMMER&label=💀+STALKERS&color=blue&style=for-the-badge" alt="Views">
+  <img src="https://komarev.com/ghpvc/?username=ikyapakeofc&repo=NGLSPAMMER&label=🔥+HAKERS&color=green&style=for-the-badge" alt="Views">
+  <img src="https://komarev.com/ghpvc/?username=ikyapakeofc&repo=NGLSPAMMER&label=👮+FBI+NGINTAI&color=yellow&style=for-the-badge" alt="Views">
+  <img src="https://komarev.com/ghpvc/?username=ikyapakeofc&repo=NGLSPAMMER&label=👽+ALIEN&color=purple&style=for-the-badge" alt="Views">
+</p>
 ```
 
 ---
